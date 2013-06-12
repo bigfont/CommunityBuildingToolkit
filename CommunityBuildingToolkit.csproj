@@ -1,0 +1,357 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{5B23825C-FF31-4D51-8982-C325DACB26D9}</ProjectGuid>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>CommunityBuildingToolkit</RootNamespace>
+    <AssemblyName>CommunityBuildingToolkit</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <UseIISExpress>true</UseIISExpress>
+    <IISExpressSSLPort />
+    <IISExpressAnonymousAuthentication />
+    <IISExpressWindowsAuthentication />
+    <IISExpressUseClassicPipelineMode />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Web.DynamicData" />
+    <Reference Include="System.Web.Entity" />
+    <Reference Include="System.Web.ApplicationServices" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.EnterpriseServices" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="assets-00\bootstrap\css\bootstrap.min.css" />
+    <Content Include="assets-00\bootstrap\css\responsive.min.css" />
+    <Content Include="assets-00\bootstrap\img\glyphicons-halflings-white.png" />
+    <Content Include="assets-00\bootstrap\img\glyphicons-halflings.png" />
+    <Content Include="assets-00\bootstrap\js\bootstrap-affix.js" />
+    <Content Include="assets-00\bootstrap\js\bootstrap-alert.js" />
+    <Content Include="assets-00\bootstrap\js\bootstrap-button.js" />
+    <Content Include="assets-00\bootstrap\js\bootstrap-carousel.js" />
+    <Content Include="assets-00\bootstrap\js\bootstrap-collapse.js" />
+    <Content Include="assets-00\bootstrap\js\bootstrap-dropdown.js" />
+    <Content Include="assets-00\bootstrap\js\bootstrap-modal.js" />
+    <Content Include="assets-00\bootstrap\js\bootstrap-popover.js" />
+    <Content Include="assets-00\bootstrap\js\bootstrap-scrollspy.js" />
+    <Content Include="assets-00\bootstrap\js\bootstrap-tab.js" />
+    <Content Include="assets-00\bootstrap\js\bootstrap-tooltip.js" />
+    <Content Include="assets-00\bootstrap\js\bootstrap-transition.js" />
+    <Content Include="assets-00\bootstrap\js\bootstrap-typeahead.js" />
+    <Content Include="assets-00\bootstrap\js\bootstrap.min.js" />
+    <Content Include="assets-00\bootstrap\js\tests\index.html" />
+    <Content Include="assets-00\bootstrap\js\tests\phantom.js" />
+    <Content Include="assets-00\bootstrap\js\tests\server.js" />
+    <Content Include="assets-00\bootstrap\js\tests\unit\bootstrap-affix.js" />
+    <Content Include="assets-00\bootstrap\js\tests\unit\bootstrap-alert.js" />
+    <Content Include="assets-00\bootstrap\js\tests\unit\bootstrap-button.js" />
+    <Content Include="assets-00\bootstrap\js\tests\unit\bootstrap-carousel.js" />
+    <Content Include="assets-00\bootstrap\js\tests\unit\bootstrap-collapse.js" />
+    <Content Include="assets-00\bootstrap\js\tests\unit\bootstrap-dropdown.js" />
+    <Content Include="assets-00\bootstrap\js\tests\unit\bootstrap-modal.js" />
+    <Content Include="assets-00\bootstrap\js\tests\unit\bootstrap-phantom.js" />
+    <Content Include="assets-00\bootstrap\js\tests\unit\bootstrap-popover.js" />
+    <Content Include="assets-00\bootstrap\js\tests\unit\bootstrap-scrollspy.js" />
+    <Content Include="assets-00\bootstrap\js\tests\unit\bootstrap-tab.js" />
+    <Content Include="assets-00\bootstrap\js\tests\unit\bootstrap-tooltip.js" />
+    <Content Include="assets-00\bootstrap\js\tests\unit\bootstrap-transition.js" />
+    <Content Include="assets-00\bootstrap\js\tests\unit\bootstrap-typeahead.js" />
+    <Content Include="assets-00\bootstrap\js\tests\vendor\jquery.js" />
+    <Content Include="assets-00\bootstrap\js\tests\vendor\qunit.css" />
+    <Content Include="assets-00\bootstrap\js\tests\vendor\qunit.js" />
+    <Content Include="assets-00\bootstrap\less\tests\buttons.html" />
+    <Content Include="assets-00\bootstrap\less\tests\css-tests.css" />
+    <Content Include="assets-00\bootstrap\less\tests\css-tests.html" />
+    <Content Include="assets-00\bootstrap\less\tests\forms-responsive.html" />
+    <Content Include="assets-00\bootstrap\less\tests\forms.html" />
+    <Content Include="assets-00\bootstrap\less\tests\navbar-fixed-top.html" />
+    <Content Include="assets-00\bootstrap\less\tests\navbar-static-top.html" />
+    <Content Include="assets-00\bootstrap\less\tests\navbar.html" />
+    <Content Include="assets-00\external\js\html5shiv.js" />
+    <Content Include="assets-00\external\js\jquery.js" />
+    <Content Include="assets-00\external\js\matchmedia.js" />
+    <Content Include="assets-00\external\js\picturefill.js" />
+    <Content Include="assets-00\font-awesome\css\bootstrap.css" />
+    <Content Include="assets-00\font-awesome\css\bootstrap.min.css" />
+    <Content Include="assets-00\font-awesome\css\font-awesome-ie7.css" />
+    <Content Include="assets-00\font-awesome\css\font-awesome-ie7.min.css" />
+    <Content Include="assets-00\font-awesome\css\font-awesome.css" />
+    <Content Include="assets-00\font-awesome\css\font-awesome.min.css" />
+    <Content Include="assets-00\font-awesome\font\fontawesome-webfont.svg" />
+    <Content Include="assets-00\site\css\bigfont.min.css" />
+    <Content Include="assets-00\site\img\cropped_square\lesBrost.jpg" />
+    <Content Include="assets-00\site\img\cropped_square\shaunLuttin.jpg" />
+    <Content Include="assets-00\site\js\bigfont.js" />
+    <Content Include="assets-00\site\js\bigfont.min.js" />
+    <Content Include="assets-00\external\js\holder.js" />
+    <Content Include="assetsOptimizer-Process-v.20130610-1\executables\fileOptimizer\FileOptimizer32.exe" />
+    <Content Include="assetsOptimizer-Process-v.20130610-1\executables\fileOptimizer\FileOptimizer64.exe" />
+    <Content Include="assetsOptimizer-Process-v.20130610-1\executables\fileOptimizer\Plugins32\advdef.exe" />
+    <Content Include="assetsOptimizer-Process-v.20130610-1\executables\fileOptimizer\Plugins32\advdef.txt" />
+    <Content Include="assetsOptimizer-Process-v.20130610-1\executables\fileOptimizer\Plugins32\advmng.exe" />
+    <Content Include="assetsOptimizer-Process-v.20130610-1\executables\fileOptimizer\Plugins32\advmng.txt" />
+    <Content Include="assetsOptimizer-Process-v.20130610-1\executables\fileOptimizer\Plugins32\advpng.exe" />
+    <Content Include="assetsOptimizer-Process-v.20130610-1\executables\fileOptimizer\Plugins32\advpng.txt" />
+    <Content Include="assetsOptimizer-Process-v.20130610-1\executables\fileOptimizer\Plugins32\advzip.exe" />
+    <Content Include="assetsOptimizer-Process-v.20130610-1\executables\fileOptimizer\Plugins32\advzip.txt" />
+    <Content Include="assetsOptimizer-Process-v.20130610-1\executables\fileOptimizer\Plugins32\apngopt.exe" />
+    <Content Include="assetsOptimizer-Process-v.20130610-1\executables\fileOptimizer\Plugins32\apngopt.txt" />
+    <Content Include="assetsOptimizer-Process-v.20130610-1\executables\fileOptimizer\Plugins32\DeflOpt.exe" />
+    <Content Include="assetsOptimizer-Process-v.20130610-1\executables\fileOptimizer\Plugins32\DeflOpt.txt" />
+    <Content Include="assetsOptimizer-Process-v.20130610-1\executables\fileOptimizer\Plugins32\defluff.exe" />
+    <Content Include="assetsOptimizer-Process-v.20130610-1\executables\fileOptimizer\Plugins32\docprc.exe" />
+    <Content Include="assetsOptimizer-Process-v.20130610-1\executables\fileOptimizer\Plugins32\flasm.exe" />
+    <Content Include="assetsOptimizer-Process-v.20130610-1\executables\fileOptimizer\Plugins32\flasm.html" />
+    <Content Include="assetsOptimizer-Process-v.20130610-1\executables\fileOptimizer\Plugins32\gifsicle.exe" />
+    <Content Include="assetsOptimizer-Process-v.20130610-1\executables\fileOptimizer\Plugins32\gifsicle.txt" />
+    <Content Include="assetsOptimizer-Process-v.20130610-1\executables\fileOptimizer\Plugins32\gsdll32.dll" />
+    <Content Include="assetsOptimizer-Process-v.20130610-1\executables\fileOptimizer\Plugins32\gswin32c.exe" />
+    <Content Include="assetsOptimizer-Process-v.20130610-1\executables\fileOptimizer\Plugins32\gswin32c.txt" />
+    <Content Include="assetsOptimizer-Process-v.20130610-1\executables\fileOptimizer\Plugins32\ImageMagick.exe" />
+    <Content Include="assetsOptimizer-Process-v.20130610-1\executables\fileOptimizer\Plugins32\ImageMagick.txt" />
+    <Content Include="assetsOptimizer-Process-v.20130610-1\executables\fileOptimizer\Plugins32\imagew.exe" />
+    <Content Include="assetsOptimizer-Process-v.20130610-1\executables\fileOptimizer\Plugins32\imagew.txt" />
+    <Content Include="assetsOptimizer-Process-v.20130610-1\executables\fileOptimizer\Plugins32\jpegoptim.exe" />
+    <Content Include="assetsOptimizer-Process-v.20130610-1\executables\fileOptimizer\Plugins32\jpegtran.exe" />
+    <Content Include="assetsOptimizer-Process-v.20130610-1\executables\fileOptimizer\Plugins32\jpegtran.txt" />
+    <Content Include="assetsOptimizer-Process-v.20130610-1\executables\fileOptimizer\Plugins32\mp3packer.exe" />
+    <Content Include="assetsOptimizer-Process-v.20130610-1\executables\fileOptimizer\Plugins32\mp3packer.html" />
+    <Content Include="assetsOptimizer-Process-v.20130610-1\executables\fileOptimizer\Plugins32\optipng.exe" />
+    <Content Include="assetsOptimizer-Process-v.20130610-1\executables\fileOptimizer\Plugins32\optipng.txt" />
+    <Content Include="assetsOptimizer-Process-v.20130610-1\executables\fileOptimizer\Plugins32\PETrim.exe" />
+    <Content Include="assetsOptimizer-Process-v.20130610-1\executables\fileOptimizer\Plugins32\PngOptimizer.exe" />
+    <Content Include="assetsOptimizer-Process-v.20130610-1\executables\fileOptimizer\Plugins32\PngOptimizer.txt" />
+    <Content Include="assetsOptimizer-Process-v.20130610-1\executables\fileOptimizer\Plugins32\pngout.exe" />
+    <Content Include="assetsOptimizer-Process-v.20130610-1\executables\fileOptimizer\Plugins32\pngout.txt" />
+    <Content Include="assetsOptimizer-Process-v.20130610-1\executables\fileOptimizer\Plugins32\pngrewrite.exe" />
+    <Content Include="assetsOptimizer-Process-v.20130610-1\executables\fileOptimizer\Plugins32\pngrewrite.txt" />
+    <Content Include="assetsOptimizer-Process-v.20130610-1\executables\fileOptimizer\Plugins32\pngwolf.exe" />
+    <Content Include="assetsOptimizer-Process-v.20130610-1\executables\fileOptimizer\Plugins32\pngwolf.txt" />
+    <Content Include="assetsOptimizer-Process-v.20130610-1\executables\fileOptimizer\Plugins32\rehuff.exe" />
+    <Content Include="assetsOptimizer-Process-v.20130610-1\executables\fileOptimizer\Plugins32\rehuff_theora.exe" />
+    <Content Include="assetsOptimizer-Process-v.20130610-1\executables\fileOptimizer\Plugins32\strip.exe" />
+    <Content Include="assetsOptimizer-Process-v.20130610-1\executables\fileOptimizer\Plugins32\zlib.dll" />
+    <Content Include="assetsOptimizer-Process-v.20130610-1\executables\fileOptimizer\Plugins32\zRecompress.exe" />
+    <Content Include="assetsOptimizer-Process-v.20130610-1\executables\fileOptimizer\Plugins32\zRecompress.txt" />
+    <Content Include="assetsOptimizer-Process-v.20130610-1\executables\fileOptimizer\Plugins64\advdef.exe" />
+    <Content Include="assetsOptimizer-Process-v.20130610-1\executables\fileOptimizer\Plugins64\advdef.txt" />
+    <Content Include="assetsOptimizer-Process-v.20130610-1\executables\fileOptimizer\Plugins64\advmng.exe" />
+    <Content Include="assetsOptimizer-Process-v.20130610-1\executables\fileOptimizer\Plugins64\advmng.txt" />
+    <Content Include="assetsOptimizer-Process-v.20130610-1\executables\fileOptimizer\Plugins64\advpng.exe" />
+    <Content Include="assetsOptimizer-Process-v.20130610-1\executables\fileOptimizer\Plugins64\advpng.txt" />
+    <Content Include="assetsOptimizer-Process-v.20130610-1\executables\fileOptimizer\Plugins64\advzip.exe" />
+    <Content Include="assetsOptimizer-Process-v.20130610-1\executables\fileOptimizer\Plugins64\advzip.txt" />
+    <Content Include="assetsOptimizer-Process-v.20130610-1\executables\fileOptimizer\Plugins64\apngopt.exe" />
+    <Content Include="assetsOptimizer-Process-v.20130610-1\executables\fileOptimizer\Plugins64\apngopt.txt" />
+    <Content Include="assetsOptimizer-Process-v.20130610-1\executables\fileOptimizer\Plugins64\DeflOpt.exe" />
+    <Content Include="assetsOptimizer-Process-v.20130610-1\executables\fileOptimizer\Plugins64\DeflOpt.txt" />
+    <Content Include="assetsOptimizer-Process-v.20130610-1\executables\fileOptimizer\Plugins64\defluff.exe" />
+    <Content Include="assetsOptimizer-Process-v.20130610-1\executables\fileOptimizer\Plugins64\docprc.exe" />
+    <Content Include="assetsOptimizer-Process-v.20130610-1\executables\fileOptimizer\Plugins64\flasm.exe" />
+    <Content Include="assetsOptimizer-Process-v.20130610-1\executables\fileOptimizer\Plugins64\flasm.html" />
+    <Content Include="assetsOptimizer-Process-v.20130610-1\executables\fileOptimizer\Plugins64\gifsicle.exe" />
+    <Content Include="assetsOptimizer-Process-v.20130610-1\executables\fileOptimizer\Plugins64\gifsicle.txt" />
+    <Content Include="assetsOptimizer-Process-v.20130610-1\executables\fileOptimizer\Plugins64\gsdll64.dll" />
+    <Content Include="assetsOptimizer-Process-v.20130610-1\executables\fileOptimizer\Plugins64\gswin64c.exe" />
+    <Content Include="assetsOptimizer-Process-v.20130610-1\executables\fileOptimizer\Plugins64\gswin64c.txt" />
+    <Content Include="assetsOptimizer-Process-v.20130610-1\executables\fileOptimizer\Plugins64\ImageMagick.exe" />
+    <Content Include="assetsOptimizer-Process-v.20130610-1\executables\fileOptimizer\Plugins64\ImageMagick.txt" />
+    <Content Include="assetsOptimizer-Process-v.20130610-1\executables\fileOptimizer\Plugins64\imagew.exe" />
+    <Content Include="assetsOptimizer-Process-v.20130610-1\executables\fileOptimizer\Plugins64\imagew.txt" />
+    <Content Include="assetsOptimizer-Process-v.20130610-1\executables\fileOptimizer\Plugins64\jpegoptim.exe" />
+    <Content Include="assetsOptimizer-Process-v.20130610-1\executables\fileOptimizer\Plugins64\jpegtran.exe" />
+    <Content Include="assetsOptimizer-Process-v.20130610-1\executables\fileOptimizer\Plugins64\jpegtran.txt" />
+    <Content Include="assetsOptimizer-Process-v.20130610-1\executables\fileOptimizer\Plugins64\mp3packer.exe" />
+    <Content Include="assetsOptimizer-Process-v.20130610-1\executables\fileOptimizer\Plugins64\mp3packer.html" />
+    <Content Include="assetsOptimizer-Process-v.20130610-1\executables\fileOptimizer\Plugins64\optipng.exe" />
+    <Content Include="assetsOptimizer-Process-v.20130610-1\executables\fileOptimizer\Plugins64\optipng.txt" />
+    <Content Include="assetsOptimizer-Process-v.20130610-1\executables\fileOptimizer\Plugins64\PETrim.exe" />
+    <Content Include="assetsOptimizer-Process-v.20130610-1\executables\fileOptimizer\Plugins64\PngOptimizer.exe" />
+    <Content Include="assetsOptimizer-Process-v.20130610-1\executables\fileOptimizer\Plugins64\PngOptimizer.txt" />
+    <Content Include="assetsOptimizer-Process-v.20130610-1\executables\fileOptimizer\Plugins64\pngout.exe" />
+    <Content Include="assetsOptimizer-Process-v.20130610-1\executables\fileOptimizer\Plugins64\pngout.txt" />
+    <Content Include="assetsOptimizer-Process-v.20130610-1\executables\fileOptimizer\Plugins64\pngrewrite.exe" />
+    <Content Include="assetsOptimizer-Process-v.20130610-1\executables\fileOptimizer\Plugins64\pngrewrite.txt" />
+    <Content Include="assetsOptimizer-Process-v.20130610-1\executables\fileOptimizer\Plugins64\pngwolf.exe" />
+    <Content Include="assetsOptimizer-Process-v.20130610-1\executables\fileOptimizer\Plugins64\pngwolf.txt" />
+    <Content Include="assetsOptimizer-Process-v.20130610-1\executables\fileOptimizer\Plugins64\rehuff.exe" />
+    <Content Include="assetsOptimizer-Process-v.20130610-1\executables\fileOptimizer\Plugins64\rehuff_theora.exe" />
+    <Content Include="assetsOptimizer-Process-v.20130610-1\executables\fileOptimizer\Plugins64\strip.exe" />
+    <Content Include="assetsOptimizer-Process-v.20130610-1\executables\fileOptimizer\Plugins64\zlib.dll" />
+    <Content Include="assetsOptimizer-Process-v.20130610-1\executables\fileOptimizer\Plugins64\zRecompress.exe" />
+    <Content Include="assetsOptimizer-Process-v.20130610-1\executables\fileOptimizer\Plugins64\zRecompress.txt" />
+    <Content Include="index.html" />
+    <Content Include="Web.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="assets-00\bootstrap\js\.jshintrc" />
+    <Content Include="assets-00\bootstrap\less\accordion.less" />
+    <Content Include="assets-00\bootstrap\less\alerts.less" />
+    <Content Include="assets-00\bootstrap\less\bootstrap.less" />
+    <Content Include="assets-00\bootstrap\less\breadcrumbs.less" />
+    <Content Include="assets-00\bootstrap\less\button-groups.less" />
+    <Content Include="assets-00\bootstrap\less\buttons.less" />
+    <Content Include="assets-00\bootstrap\less\carousel.less" />
+    <Content Include="assets-00\bootstrap\less\close.less" />
+    <Content Include="assets-00\bootstrap\less\code.less" />
+    <Content Include="assets-00\bootstrap\less\component-animations.less" />
+    <Content Include="assets-00\bootstrap\less\dropdowns.less" />
+    <Content Include="assets-00\bootstrap\less\forms.less" />
+    <Content Include="assets-00\bootstrap\less\grid.less" />
+    <Content Include="assets-00\bootstrap\less\hero-unit.less" />
+    <Content Include="assets-00\bootstrap\less\labels-badges.less" />
+    <Content Include="assets-00\bootstrap\less\layouts.less" />
+    <Content Include="assets-00\bootstrap\less\media.less" />
+    <Content Include="assets-00\bootstrap\less\mixins.less" />
+    <Content Include="assets-00\bootstrap\less\modals.less" />
+    <Content Include="assets-00\bootstrap\less\navbar.less" />
+    <Content Include="assets-00\bootstrap\less\navs.less" />
+    <Content Include="assets-00\bootstrap\less\pager.less" />
+    <Content Include="assets-00\bootstrap\less\pagination.less" />
+    <Content Include="assets-00\bootstrap\less\popovers.less" />
+    <Content Include="assets-00\bootstrap\less\progress-bars.less" />
+    <Content Include="assets-00\bootstrap\less\reset.less" />
+    <Content Include="assets-00\bootstrap\less\responsive-1200px-min.less" />
+    <Content Include="assets-00\bootstrap\less\responsive-767px-max.less" />
+    <Content Include="assets-00\bootstrap\less\responsive-768px-979px.less" />
+    <Content Include="assets-00\bootstrap\less\responsive-navbar.less" />
+    <Content Include="assets-00\bootstrap\less\responsive-utilities.less" />
+    <Content Include="assets-00\bootstrap\less\responsive.less" />
+    <Content Include="assets-00\bootstrap\less\scaffolding.less" />
+    <Content Include="assets-00\bootstrap\less\sprites.less" />
+    <Content Include="assets-00\bootstrap\less\tables.less" />
+    <Content Include="assets-00\bootstrap\less\thumbnails.less" />
+    <Content Include="assets-00\bootstrap\less\tooltip.less" />
+    <Content Include="assets-00\bootstrap\less\type.less" />
+    <Content Include="assets-00\bootstrap\less\utilities.less" />
+    <Content Include="assets-00\bootstrap\less\variables.less" />
+    <Content Include="assets-00\bootstrap\less\variables_orig.less" />
+    <Content Include="assets-00\bootstrap\less\wells.less" />
+    <Content Include="assets-00\font-awesome\font\fontawesome-webfont.eot" />
+    <Content Include="assets-00\font-awesome\font\fontawesome-webfont.ttf" />
+    <Content Include="assets-00\font-awesome\font\fontawesome-webfont.woff" />
+    <Content Include="assets-00\font-awesome\font\FontAwesome.otf" />
+    <Content Include="assets-00\font-awesome\less\bootstrap.less" />
+    <Content Include="assets-00\font-awesome\less\core.less" />
+    <Content Include="assets-00\font-awesome\less\extras.less" />
+    <Content Include="assets-00\font-awesome\less\font-awesome-ie7.less" />
+    <Content Include="assets-00\font-awesome\less\font-awesome.less" />
+    <Content Include="assets-00\font-awesome\less\icons.less" />
+    <Content Include="assets-00\font-awesome\less\mixins.less" />
+    <Content Include="assets-00\font-awesome\less\path.less" />
+    <Content Include="assets-00\font-awesome\less\variables.less" />
+    <Content Include="assets-00\site\less\bigfont-responsive-1200px-min.less" />
+    <Content Include="assets-00\site\less\bigfont-responsive-767px-max.less" />
+    <Content Include="assets-00\site\less\bigfont-responsive-768px-979px.less" />
+    <Content Include="assets-00\site\less\bigfont-responsive-980px-1199px.less" />
+    <Content Include="assets-00\site\less\bigfont.less" />
+    <Content Include="assetsOptimizer-Process-v.20130610-1\executables\fileOptimizer\FileOptimizer.chm" />
+    <Content Include="assetsOptimizer-Process-v.20130610-1\executables\fileOptimizer\FileOptimizer64.ini" />
+    <Content Include="assetsOptimizer-Process-v.20130610-1\executables\fileOptimizer\Plugins32\defluff.bat" />
+    <Content Include="assetsOptimizer-Process-v.20130610-1\executables\fileOptimizer\Plugins64\defluff.bat" />
+    <Content Include="assetsOptimizer-Process-v.20130610-1\modules\image\Add-CropFilter.ps1" />
+    <Content Include="assetsOptimizer-Process-v.20130610-1\modules\image\Add-OverlayFilter.ps1" />
+    <Content Include="assetsOptimizer-Process-v.20130610-1\modules\image\Add-RotateFlipFilter.ps1" />
+    <Content Include="assetsOptimizer-Process-v.20130610-1\modules\image\Add-ScaleFilter.ps1" />
+    <Content Include="assetsOptimizer-Process-v.20130610-1\modules\image\ConvertTo-Jpeg.ps1" />
+    <Content Include="assetsOptimizer-Process-v.20130610-1\modules\image\Example\FilterImagesInDirectory.ps1" />
+    <Content Include="assetsOptimizer-Process-v.20130610-1\modules\image\Get-Image.ps1" />
+    <Content Include="assetsOptimizer-Process-v.20130610-1\modules\image\Image.psm1" />
+    <Content Include="assetsOptimizer-Process-v.20130610-1\modules\image\Set-ImageFilter.ps1" />
+    <Content Include="assetsOptimizer-Process-v.20130610-1\modules\minJS\minJS.psm1" />
+    <Content Include="assetsOptimizer-Process-v.20130610-1\process.ps1" />
+    <Content Include="assetsOptimizer-Process-v.20130610-1\sandbox.ps1" />
+    <Content Include="assetsOptimizer-Process-v.20130610-1\Thumbs.db" />
+    <Content Include="assets-00\site\less\bigfont-type.less" />
+    <Content Include="assets-00\site\less\bigfont-layout.less" />
+    <Content Include="assets-00\site\less\bigfont-icons.less" />
+    <Content Include="assets-00\site\less\bigfont-affix.less" />
+    <Content Include="assets-00\site\less\bigfont-variables.less" />
+    <Content Include="assets-00\site\less\bigfont-mixins.less" />
+    <None Include="Web.Debug.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+    <None Include="Web.Release.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="assets-00\external\css\" />
+    <Folder Include="assets-00\external\img\" />
+    <Folder Include="assets-00\external\less\" />
+    <Folder Include="assets-00\site\img\carousel\" />
+    <Folder Include="assets-00\site\img\cropped_wide\" />
+    <Folder Include="assets-00\site\img\logo\" />
+  </ItemGroup>
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+  </PropertyGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(VSToolsPath)\WebApplications\Microsoft.WebApplication.targets" Condition="'$(VSToolsPath)' != ''" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" Condition="false" />
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>True</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>0</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>http://localhost:50287/</IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
