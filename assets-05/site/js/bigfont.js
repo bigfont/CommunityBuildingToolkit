@@ -31,7 +31,7 @@
         return li;
     }
 
-    function populateSubNavigation() {
+    function populateSubNavigation(addSubsections) {
         var
     ulSections, ulSubsections,
     sections, subSections,
@@ -46,27 +46,27 @@
             liSection = createNavigationListItem(section);
             ulSections.append(liSection);
 
-            // add the subsections to the section
-            ulSubsections = $('<ul/>', {
-                'class':'nav nav-list'
-            });
-            subSections = $(section).find('> section');
+            if (addSubsections) {
+                // add the subsections to the section
+                ulSubsections = $('<ul/>', {
+                    'class': 'nav nav-list'
+                });
+                subSections = $(section).find('> section');
 
-            $.each(subSections, function (i, subSection) {
+                $.each(subSections, function (i, subSection) {
 
-                liSubsection = createNavigationListItem(subSection);
-                ulSubsections.append(liSubsection);
-                liSection.append(ulSubsections);
+                    liSubsection = createNavigationListItem(subSection);
+                    ulSubsections.append(liSubsection);
+                    liSection.append(ulSubsections);
 
-            });
-
+                });
+            }
         });
     }
 
-
     $(function () {
 
-        populateSubNavigation();
+        populateSubNavigation(false);
 
     });
 }(window.jQuery));
