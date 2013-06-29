@@ -309,6 +309,7 @@
     <Content Include="assets-05\site\less\bigfont-type.less" />
     <Content Include="assets-05\site\less\bigfont-variables.less" />
     <Content Include="assets-05\site\less\bigfont.less" />
+    <None Include="Properties\PublishProfiles\azure-community.pubxml" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
