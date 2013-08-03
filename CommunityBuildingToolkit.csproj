@@ -175,6 +175,7 @@
     <Content Include="assets-05\site\less\bigfont-type.less" />
     <Content Include="assets-05\site\less\bigfont-variables.less" />
     <Content Include="assets-05\site\less\bigfont.less" />
+    <Content Include="packages.config" />
     <None Include="Properties\PublishProfiles\azure-community.pubxml" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
@@ -190,9 +191,6 @@
     <Folder Include="assets-05\site\img\carousel\" />
     <Folder Include="assets-05\site\img\cropped_wide\" />
     <Folder Include="assets-05\site\img\logo\" />
-  </ItemGroup>
-  <ItemGroup>
-    <Reference Include="Microsoft.Web.WebPages.OAuth, Version=2.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL" />
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
@@ -219,6 +217,7 @@
       </FlavorProperties>
     </VisualStudio>
   </ProjectExtensions>
+  <Import Project="packages\Microsoft.Bcl.Build.1.0.8\tools\Microsoft.Bcl.Build.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.
   <Target Name="BeforeBuild">
