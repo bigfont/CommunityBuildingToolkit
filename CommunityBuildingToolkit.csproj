@@ -183,8 +183,6 @@
     <Content Include="assets-05\font-awesome\less\mixins.less" />
     <Content Include="assets-05\font-awesome\less\path.less" />
     <Content Include="assets-05\font-awesome\less\variables.less" />
-    <Content Include="assets-05\site\img\cropped_square\Thumbs.db" />
-    <Content Include="assets-05\site\img\Thumbs.db" />
     <Content Include="assets-05\site\less\bigfont-affix.less" />
     <Content Include="assets-05\site\less\bigfont-icons.less" />
     <Content Include="assets-05\site\less\bigfont-layout.less" />
